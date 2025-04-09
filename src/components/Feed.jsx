@@ -15,7 +15,7 @@ const Feed = () => {
       const res = await axios.get(BASE_URL + "/feed", {
         withCredentials: true,
       });
-      dispatch(addFeed(res?.data?.data));
+      dispatch(addFeed(res?.data));
     } catch (err) {
       //TODO: handle error
     }
